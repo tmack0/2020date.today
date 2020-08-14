@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url(2019-nCoV-CDC-23312.jpg);
+  opacity: 0.6;
+}
+</style>
+<script data-ad-client="ca-pub-4756267259843365" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  var n = Date.now() / 1000;
+  var offset = ( n - 1583020800 );
+  var marchday = ( offset / 86400 );
+
+  document.getElementById('txt').innerHTML =
+  "<h2>Today is:</h2>" +
+  "<h3>March " + Math.floor(marchday) + ", 2020<br> " + h + ":" + m + ":" + s + "</h3>";
+  var t = setTimeout(startTime, 500);
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+</body>
+</html>
+
