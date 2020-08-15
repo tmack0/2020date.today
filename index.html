@@ -6,6 +6,24 @@ body {
   background-image: url(2019-nCoV-CDC-23312.jpg);
   opacity: 0.6;
 }
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 25px;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 </style>
 <script data-ad-client="ca-pub-4756267259843365" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
@@ -21,8 +39,8 @@ function startTime() {
   var marchday = ( offset / 86400 );
 
   document.getElementById('txt').innerHTML =
-  "<h2>Today is:</h2>" +
-  "<h3>March " + Math.floor(marchday) + ", 2020<br> " + h + ":" + m + ":" + s + "</h3>";
+  "<h1>Today is:</h1>" +
+  "<h2>March " + Math.floor(marchday) + ", 2020<br> " + h + ":" + m + ":" + s + "</h2>";
   var t = setTimeout(startTime, 500);
   var t = setTimeout(startTime, 500);
 }
@@ -35,7 +53,8 @@ function checkTime(i) {
 
 <body onload="startTime()">
 
-<div id="txt"></div>
+<div id="txt" ></div>
+<div id="footer" ><h4>Now, go wash your hands</h4><br><h5>And put on a mask!</h5></div>
 
 </body>
 </html>
