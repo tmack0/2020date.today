@@ -35,7 +35,7 @@ function startTime() {
   m = checkTime(m);
   s = checkTime(s);
   var n = Date.now() / 1000;
-  var offset = ( n - 1583020800 - (today.getTimezoneOffset() * 60));
+  var offset = ( n - 1582934400 - (today.getTimezoneOffset() * 60));
   var marchday = ( offset / 86400 );
 
   document.getElementById('txt').innerHTML =
